@@ -2,10 +2,12 @@
 
 	var year = +prompt('Enter year');
 
-	if (){
-
+	if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)){
+		console.log("В этом году 366 дней. Это високосный год");
 	}
 
-	console.log("В этом году " + days_year);
+	else {
+		console.log("В этом году 365 дней. Этот год не високосный");
+	}
 
 </script>
